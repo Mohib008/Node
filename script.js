@@ -7,3 +7,6 @@ fs.readFile("./app.txt", (err, data) => {
     }
     console.log("1", data.toString("utf8"));
 });
+
+const file = fs.readFileSync("./app.txt");
+console.log("2", file.toString());
